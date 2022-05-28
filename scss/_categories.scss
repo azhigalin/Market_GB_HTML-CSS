@@ -14,6 +14,13 @@
 }
 
 .categories-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: inherit;
     width: 100%;
     max-width: 30%;
     min-width: min-content;
@@ -42,17 +49,6 @@
         max-width: 100%;
         background-image: url(../img/accesories.png);
         margin: 0;
-    }
-
-    &-link {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        min-height: inherit;
-        width: 100%;
     }
 
     &-title,
