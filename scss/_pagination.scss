@@ -12,13 +12,10 @@
 }
 
 .pagination-item-lnk {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgb(171, 167, 167);
+    @include txt (300, 16px, 19px, rgb(171, 167, 167));
 
     &:nth-child(2) {
-        color: #EF5B70;
+        color: $clr-prjct-2;
     }
 
     &:first-child,

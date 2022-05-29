@@ -32,6 +32,12 @@ textarea {
   cursor: pointer;
 }
 
+hr {
+  opacity: 0.4;
+  border: 1px solid #EAEAEA;
+  width: 100%;
+}
+
 .fas,
 input,
 svg {
@@ -89,6 +95,7 @@ body {
           justify-content: space-between;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
+  font-style: normal;
   color: #222222;
 }
 
@@ -184,14 +191,6 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.search-icon-form-label:hover .search-icon-form__svg {
-  fill: gold;
-}
-
-.search-icon-form-label:active .search-icon-form__svg {
-  fill: green;
 }
 
 .cart-btn-link {
@@ -384,19 +383,23 @@ body {
 .menu-list-item:first-child {
   margin: 0 0 24px 0;
   font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: none;
   text-transform: uppercase;
 }
 
 .menu-list-item > a {
   display: block;
   margin: 0 0 12px 0;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: none;
   text-transform: uppercase;
   text-decoration: none;
-  color: #f16d7f;
+  color: #F16D7F;
 }
 
 .menu-list-item > a:hover {
@@ -405,7 +408,7 @@ body {
 
 .menu-list-item > a:active {
   text-decoration: none;
-  color: #f16e7d;
+  color: #F16D7F;
 }
 
 .menu-list-title {
@@ -417,7 +420,6 @@ body {
 }
 
 .menu-sublist {
-  /* margin: 0 0 20px 0; */
   padding: 0 0 0 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -429,8 +431,10 @@ body {
 
 .menu-sublist-item a {
   color: #6f6e6e;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: none;
   text-decoration: none;
 }
 
@@ -467,7 +471,6 @@ body {
   width: 100%;
   max-width: 377px;
   margin: 0 95px 87px 0;
-  font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
@@ -492,6 +495,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 38.4px;
+  color: #222222;
 }
 
 .brand-text span {
@@ -577,23 +581,21 @@ body {
 }
 
 .categories-item-title {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.2px;
-  text-align: center;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .categories-item-subtitle {
   display: block;
   width: 100%;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28.8px;
-  text-align: center;
   color: #F16D7F;
+  text-align: center;
 }
 
 .product {
@@ -857,8 +859,8 @@ a:hover.product-item-link {
   font-weight: bold;
   font-size: 19.96px;
   line-height: 24px;
-  text-align: center;
   color: #FBFBFB;
+  text-align: center;
 }
 
 .features-text {
@@ -866,8 +868,8 @@ a:hover.product-item-link {
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
-  text-align: center;
   color: #FBFBFB;
+  text-align: center;
 }
 
 .subscribe {
@@ -928,8 +930,8 @@ a:hover.product-item-link {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
   color: #222224;
+  text-align: center;
 }
 
 .subscribe-item-txt span {
@@ -955,8 +957,8 @@ a:hover.product-item-link {
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
-  text-align: center;
   color: #222224;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -964,8 +966,8 @@ a:hover.product-item-link {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
   color: #222224;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
@@ -1173,6 +1175,7 @@ a:hover.product-item-link {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  color: #222222;
   text-transform: uppercase;
 }
 
@@ -1253,10 +1256,10 @@ a:hover.product-item-link {
 }
 
 .filter-btn span {
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16.8px;
+  color: none;
   text-transform: uppercase;
 }
 
@@ -1294,10 +1297,10 @@ a:hover.product-item-link {
   width: 100%;
   margin: 0 0 18px 0;
   padding: 11px;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16.8px;
+  color: none;
   border-bottom: 1px solid #EBEBEB;
   position: relative;
 }
@@ -1342,10 +1345,10 @@ a:hover.product-item-link {
 
 .filter-sublist-item {
   margin: 0 0 11px 0;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16.8px;
+  color: none;
 }
 
 .filter-sublist-item:last-child {
@@ -1529,5 +1532,212 @@ a:hover.product-item-link {
 
 .size-checkbox:disabled + .list-size-item-title::before {
   background-color: #F16D7F;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 777px;
+  background: url(../img/woman-chair.png) no-repeat 514px;
+  background-color: #F7F7F7;
+  background-position: center;
+}
+
+.slide-btn {
+  width: 100%;
+  height: 47px;
+  max-width: 47px;
+  cursor: pointer;
+}
+
+.slide-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.description {
+  margin: 0 0 128px 0;
+}
+
+.description-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EAEAEA;
+  margin-top: -62px;
+  min-height: 601px;
+  background-color: #FFFFFF;
+}
+
+.description-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 641px;
+}
+
+.description-product-title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.description-product-title:before {
+  content: "";
+  display: block;
+  width: 63px;
+  height: 3px;
+  background-color: #EF5B70;
+  position: absolute;
+  top: 29px;
+  left: 46px;
+}
+
+.description-title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.description-txt {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 27px;
+  color: #5E5E5E;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.product-description-price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  margin-bottom: 64px;
+}
+
+.description-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 64px 0 48px 0;
+  gap: 42px;
+}
+
+#description-btn {
+  display: none;
+}
+
+.description-item-btn {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.description-item-btn svg {
+  fill: #6F6E6E;
+  position: absolute;
+  top: 40%;
+  margin-left: 9px;
+}
+
+.description-item-btn:hover {
+  color: #F16D7F;
+}
+
+.description-item-btn:hover svg {
+  fill: currentColor;
+}
+
+.description-item-btn:active {
+  color: black;
+}
+
+.description-item-btn:active svg {
+  fill: currentColor;
+}
+
+.description-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 48px;
+  max-width: 211px;
+  border: 1px solid #FF6A6A;
+  background: transparent;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F26376;
+}
+
+.description-btn svg {
+  fill: #EF5B70;
+  margin-right: 22px;
+}
+
+.description-btn:hover {
+  color: #F16D7F;
+}
+
+.description-btn:hover svg {
+  fill: currentColor;
+}
+
+.description-btn:active {
+  color: black;
+  border: 1px solid black;
+}
+
+.description-btn:active svg {
+  fill: currentColor;
 }
 /*# sourceMappingURL=style.css.map */

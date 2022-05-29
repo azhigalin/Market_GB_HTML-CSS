@@ -16,17 +16,11 @@
 .filter-btn {
     display: block;
     width: 100%;
-    // border: none;
-    // color: #000000;
-    // text-align: left;
 }
 
 .filter-btn span {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16.8px;
-    text-transform: uppercase;
+    @include txt (600, 14px, 16.8px, none);
+    text-transform: $text-transform;
 }
 
 .filter-btn svg {
@@ -34,7 +28,7 @@
 }
 
 .filter-btn:hover {
-    color: #F16D7F;
+    color: $clr-prjct-bsd;
 }
 
 .filter-btn:active {
@@ -63,10 +57,7 @@
     width: 100%;
     margin: 0 0 18px 0;
     padding: 11px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16.8px;
+    @include txt (normal, 14px, 16.8px, none);
     border-bottom: 1px solid #EBEBEB;
     position: relative;
 }
@@ -76,28 +67,28 @@
     display: block;
     width: 5px;
     height: 37px;
-    background-color: #EF5B70;
+    background-color: $clr-prjct-2;
     position: absolute;
     bottom: -1px;
     left: 0;
 }
 
 .filter-list-item a {
-    text-transform: uppercase;
+    text-transform: $text-transform;
     color: #6F6E6E;
     text-decoration: none;
 }
 
 .filter-list-item:hover::before {
-    background-color: #EF5B70;
+    background-color: $clr-prjct-2;
 }
 
 .filter-list-item:hover a {
-    color: #EF5B70;
+    color: $clr-prjct-2;
 }
 
 .filter-list-item:active::before {
-    background-color: #EF5B70;
+    background-color: $clr-prjct-2;
 }
 
 .filter-list-item:active a {
@@ -111,10 +102,7 @@
 
 .filter-sublist-item {
     margin: 0 0 11px 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16.8px;
+    @include txt (normal, 14px, 16.8px, none);
 }
 
 .filter-sublist-item:last-child {
@@ -127,7 +115,7 @@
 }
 
 .filter-sublist-item:hover a {
-    color: #EF5B70;
+    color: $clr-prjct-2;
 }
 
 .filter-sublist-item:active a {
@@ -158,11 +146,8 @@
 .list-btn-title {
     display: block;
     width: 100%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.8px;
-    color: #6F6E6E;
-    text-transform: uppercase;
+    @include txt (400, 14px, 16.8px, #6F6E6E);
+    text-transform: $text-transform;
     position: relative;
 
 
@@ -174,7 +159,7 @@
     }
 
     &:hover {
-        color: #F16D7F;
+        color: $clr-prjct-bsd;
     }
 
     &:hover svg {
@@ -225,11 +210,8 @@
 
 .list-size-item-title {
     display: block;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #6F6E6E;
+    text-transform: $text-transform;
+    @include txt (400, 14px, 16px, #6F6E6E);
 }
 
 #select-size-xs,
@@ -264,24 +246,24 @@
 }
 
 .size-checkbox:checked+.list-size-item-title::before {
-    border-color: #EF5B70;
-    background-color: #F16D7F;
+    border-color: $clr-prjct-2;
+    background-color: $clr-prjct-bsd;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
 .size-checkbox:not(:checked)+.list-size-item-title:hover::before {
-    border-color: #EF5B70;
+    border-color: $clr-prjct-2;
 }
 
 .size-checkbox:active+.list-size-item-title::before {
-    background-color: #F16D7F;
-    border-color: #EF5B70;
+    background-color: $clr-prjct-bsd;
+    border-color: $clr-prjct-2;
 }
 
 .size-checkbox:focus:not(:checked)+.list-size-item-title::before {
-    border-color: #EF5B70;
+    border-color: $clr-prjct-2;
 }
 
 .size-checkbox:disabled+.list-size-item-title::before {
-    background-color: #F16D7F;
+    background-color: $clr-prjct-bsd;
 }
