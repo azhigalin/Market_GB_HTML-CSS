@@ -1,0 +1,43 @@
+.brand {
+    background-color: #F1E4E6;
+    margin: 0 0 65px 0;
+
+
+    &-wrap {
+        height: 764px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: url(../img/brand.png) no-repeat -220px;
+    }
+
+    &-heading {
+        display: block;
+        width: 100%;
+        max-width: 377px;
+        margin: 0 95px 87px 0;
+        @include txt (900, 48px, 58px, #222222);
+        text-transform: $text-transform;
+        position: relative;
+    }
+
+    &-heading::before {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 92px;
+        background-color: $clr-prjct-bsd;
+        position: absolute;
+        top: 0;
+        left: -28px;
+    }
+
+    &-text {
+        display: block;
+        @include txt (700, 30px, 38.4px, #222222);
+    }
+
+    &-text span {
+        color: $clr-prjct-bsd;
+    }
+}

@@ -1,0 +1,72 @@
+.categories {
+    width: 100%;
+    margin: 0 auto 96px;
+
+
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 30px;
+    }
+}
+
+.categories-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: inherit;
+    width: 100%;
+    max-width: 30%;
+    min-width: min-content;
+    min-height: 260px;
+    margin: 0 0 30px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
+
+
+    &:nth-child(1) {
+        background-image: url(../img/woman.png);
+    }
+
+    &:nth-child(2) {
+        background-image: url(../img/man.png);
+    }
+
+    &:nth-child(3) {
+        background-image: url(../img/kid.png);
+    }
+
+    &:last-child {
+        max-width: 100%;
+        background-image: url(../img/accesories.png);
+        margin: 0;
+    }
+
+    &-title,
+    &-subtitle {
+        display: block;
+        width: 100%;
+        text-transform: $text-transform;
+    }
+
+    &-title {
+        @include txt (400, 16px, 19.2px, #FFFFFF);
+        text-align: center;
+    }
+
+    &-subtitle {
+        display: block;
+        width: 100%;
+        @include txt (700, 24px, 28.8px, $clr-prjct-bsd);
+        text-align: center;
+    }
+}
