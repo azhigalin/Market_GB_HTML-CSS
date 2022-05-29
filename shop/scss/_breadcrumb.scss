@@ -1,0 +1,45 @@
+.breadcrumb {
+    background: #F8F3F4;
+}
+
+.breadcrumb-wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 148px;
+
+}
+
+.breadcrumb-title {
+    @include txt (400, 24px, 29px, $clr-prjct-bsd);
+    text-transform: $text-transform;
+}
+
+.breadcrumb-list {
+    display: flex;
+    padding: 10px 16px;
+}
+
+.breadcrumb-item:after {
+    padding: 3px;
+    color: black;
+    content: "/\00a0";
+}
+
+.breadcrumb-item:nth-last-child(1)::after {
+    content: "";
+}
+
+.breadcrumb-item {
+    @include txt (300, 14px, 17px, #222222);
+    text-transform: $text-transform;
+}
+
+.breadcrumb-item-link {
+    color: #636363;
+}
+
+.breadcrumb-item span {
+    color: $clr-prjct-bsd;
+}
