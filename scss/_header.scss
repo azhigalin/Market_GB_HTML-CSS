@@ -62,14 +62,6 @@
         width: 100%;
         height: 100%;
     }
-
-    &-label:hover .search-icon-form__svg {
-        fill: gold;
-    }
-
-    &-label:active .search-icon-form__svg {
-        fill: green;
-    }
 }
 
 .cart-btn-link {
@@ -80,7 +72,7 @@
         display: block;
         width: 19px;
         height: 19px;
-        background-color: #F16D7F;
+        background-color: $clr-prjct-bsd;
         border-radius: 50%;
         display: flex;
         justify-content: center;
