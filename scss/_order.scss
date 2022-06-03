@@ -1,0 +1,244 @@
+.order {
+    padding: 96px 0 128px 0;
+
+    &-wrp {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.order-add-wrp {
+    width: 100%;
+    max-width: 652px;
+}
+
+.order-card {
+    display: flex;
+    width: 100%;
+    max-width: 652px;
+    min-height: 306px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &:first-child {
+        margin-bottom: 40px;
+    }
+
+    &:nth-child(2) {
+        margin-bottom: 72px;
+    }
+}
+
+.order-card-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 652px;
+    gap: 6px;
+    padding: 22px 0 62px 32px;
+
+    &-title {
+        @include txt (400, 24px, 29px, #222222);
+        text-transform: $text-transform;
+        margin-bottom: 42px;
+        width: 100%;
+        max-width: 216px;
+    }
+
+    &-txt {
+        @include txt (400, 22px, 26px, #575757);
+    }
+
+    &-txt span {
+        color: $clr-prjct-2;
+    }
+}
+
+.order-card-cls {
+    display: flex;
+    justify-content: flex-end;
+    height: 42px;
+    padding: 28px 22px 0 0;
+    cursor: default;
+
+    &:hover {
+        transform: none;
+    }
+}
+
+#Quantity,
+#Quant {
+    display: block;
+    width: 100%;
+    max-width: 43px;
+    height: 24px;
+    border: 1px solid #EAEAEA;
+    @include txt (400, 18px, 22px, #656565);
+    text-align: center;
+
+    &:hover {
+        color: $clr-prjct-bsd;
+    }
+}
+
+.order-card-quantity {
+    display: flex;
+    gap: 24px;
+}
+
+.order-btn-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #A4A4A4;
+    background-color: #FFFFFF;
+    @include txt (300, 14px, 17px, #000000);
+    text-transform: $text-transform;
+
+    &:first-child {
+        max-width: 235px;
+    }
+
+    &:last-child {
+        max-width: 225px;
+    }
+
+    &:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    &:active {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+}
+
+
+.shipping {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+}
+
+.shipping-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 57px;
+}
+
+.shipping-title {
+    margin-bottom: 20.5px;
+    @include txt (300, 16px, 19px, #222222);
+    text-transform: $text-transform;
+}
+
+.shipping-wrp input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    padding-left: 16.73px;
+    width: 100%;
+    max-width: 358px;
+    min-height: 45px;
+    border: 1px solid #A4A4A4;
+    @include txt (300, 13px, 16px, #222222);
+}
+
+.placeholder-clr::placeholder {
+    color: #B1B1B1;
+}
+
+.shipping-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 35px;
+    max-width: 102px;
+    border: 1px solid #A4A4A4;
+    background-color: #FFFFFF;
+    @include txt (300, 11px, 13px, #4A4A4A);
+    text-transform: $text-transform;
+
+    &:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    &:active {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+}
+
+.shipping-pay-module {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 360px;
+    min-height: 214px;
+    padding: 39px 34px 42px 44px;
+    background-color: #F5F3F3;
+
+    &-txt {
+        @include txt (400, 11px, 13px, #4A4A4A);
+        text-transform: $text-transform;
+        margin-bottom: 12px;
+    }
+
+    &-txt span {
+        margin-left: 24px;
+    }
+
+    &-txt-dbl {
+        @include txt (300, 16px, 19px, #222222);
+        text-transform: $text-transform;
+        margin-bottom: 21px;
+    }
+
+    &-txt-dbl span {
+        margin-left: 24px;
+        color: $clr-prjct-bsd;
+    }
+
+    & hr {
+        border: 1px solid #e2e2e2;
+    }
+}
+
+.shipping-pay-module-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 273px;
+    min-height: 50px;
+    margin: 18px 0 0 0;
+    background-color: $clr-prjct-bsd;
+    @include txt (300, 16px, 19px, #FFFFFF);
+    text-transform: $text-transform;
+
+    &:hover {
+        background-color: #fff;
+        color: $clr-prjct-bsd;
+    }
+
+    &:active {
+        background-color: $clr-prjct-bsd;
+        color: #fff;
+    }
+}
