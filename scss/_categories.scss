@@ -14,6 +14,13 @@
 }
 
 .categories-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: inherit;
     width: 100%;
     max-width: 30%;
     min-width: min-content;
@@ -44,41 +51,22 @@
         margin: 0;
     }
 
-    &-link {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        min-height: inherit;
-        width: 100%;
-    }
-
     &-title,
     &-subtitle {
         display: block;
         width: 100%;
-        text-transform: uppercase;
+        text-transform: $text-transform;
     }
 
     &-title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19.2px;
+        @include txt (400, 16px, 19.2px, #FFFFFF);
         text-align: center;
-        color: #FFFFFF;
     }
 
     &-subtitle {
         display: block;
         width: 100%;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28.8px;
+        @include txt (700, 24px, 28.8px, $clr-prjct-bsd);
         text-align: center;
-        color: #F16D7F;
     }
 }
