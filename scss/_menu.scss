@@ -154,19 +154,17 @@
 .menu-list-item:first-child {
     margin: 0 0 24px 0;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
+    @include txt (normal, 14px, 17px, none);
+    text-transform: $text-transform;
 }
 
 .menu-list-item>a {
     display: block;
     margin: 0 0 12px 0;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
+    @include txt (normal, 14px, 17px, none);
+    text-transform: $text-transform;
     text-decoration: none;
-    color: #f16d7f;
+    color: $clr-prjct-bsd;
 }
 
 .menu-list-item>a:hover {
@@ -175,7 +173,7 @@
 
 .menu-list-item>a:active {
     text-decoration: none;
-    color: #f16e7d;
+    color: $clr-prjct-bsd;
 }
 
 .menu-list-title {
@@ -183,11 +181,10 @@
     margin: 9px 0 24px 0;
     font-weight: bold;
     color: #000000;
-    text-transform: uppercase;
+    text-transform: $text-transform;
 }
 
 .menu-sublist {
-    /* margin: 0 0 20px 0; */
     padding: 0 0 0 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -200,8 +197,7 @@
 
 .menu-sublist-item a {
     color: #6f6e6e;
-    font-size: 14px;
-    line-height: 17px;
+    @include txt (normal, 14px, 17px, none);
     text-decoration: none;
 }
 

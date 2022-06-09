@@ -36,11 +36,8 @@
     }
 
     &-txt {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
+        @include txt (400, 20px, 24px, #222224);
         text-align: center;
-        color: #222224;
     }
 
     &-txt span {
@@ -56,22 +53,16 @@
 
 
     &-tittle {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 40px;
+        @include txt (700, 24px, 40px, #222224);
         text-align: center;
-        color: #222224;
-        text-transform: uppercase;
+        text-transform: $text-transform;
 
     }
 
     &-txt {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
+        @include txt (400, 18px, 30px, #222224);
         text-align: center;
-        color: #222224;
-        text-transform: uppercase;
+        text-transform: $text-transform;
         margin-bottom: 32px;
     }
 
@@ -91,10 +82,7 @@
         min-height: 49px;
         padding: 16px;
         border-radius: 30px 0 0 30px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #222224;
+        @include txt (400, 14px, 17px, #222224);
         background-color: #E1E1E1;
     }
 
@@ -108,20 +96,17 @@
         max-width: 100px;
         min-height: 49px;
         border-radius: 0 30px 30px 0;
-        background-color: #F16D7F;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
+        background-color: $clr-prjct-bsd;
+        @include txt (400, 14px, 17px, #FFFFFF);
     }
 
     &-btn:hover {
         background-color: #fff;
-        color: #F16D7F;
+        color: $clr-prjct-bsd;
     }
 
     &-btn:active {
-        background-color: #F16D7F;
+        background-color: $clr-prjct-bsd;
         color: #fff;
     }
 }
@@ -142,10 +127,7 @@
     }
 
     &-txt {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FBFBFB;
+        @include txt (400, 16px, 19px, #FBFBFB);
     }
 }
 
@@ -171,11 +153,11 @@
     }
 
     &:hover svg {
-        fill: #F16D7F;
+        fill: $clr-prjct-bsd;
     }
 
     &:active {
-        background-color: #F16D7F;
+        background-color: $clr-prjct-bsd;
     }
 
     &:active svg {

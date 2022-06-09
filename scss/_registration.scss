@@ -1,0 +1,125 @@
+.registration {
+    margin: 64px 0 96px 0;
+}
+
+.registration-wrp {
+    display: flex;
+    align-items: flex-start;
+    gap: 128px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+}
+
+.registration-title {
+    @include txt (300, 16px, 19px, #222222);
+    margin-bottom: 20.5px;
+}
+
+.registration-form input[type=text],
+.registration-form input[type=email],
+.registration-form input[type=password] {
+    width: 100%;
+    min-height: 44px;
+    max-width: 360px;
+    padding-left: 16px;
+    margin-bottom: 20.5px;
+    border: 1px solid #a4a4a4;
+}
+
+.registration-form input[type=text]::placeholder,
+.registration-form input[type=email]::placeholder,
+.registration-form input[type=password]::placeholder {
+    @include txt (300, 13px, 16px, #B1B1B1);
+}
+
+.registration-radio {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 34px 0;
+}
+
+.registration-radio input {
+    margin-right: 10px;
+    border: 1px solid #A4A4A4;
+    width: 17px;
+    height: 17px;
+}
+
+.registration-radio label {
+    margin-right: 20px;
+    @include txt (300, 11px, 13px, #000000);
+}
+
+.registration-pswrd-txt {
+    @include txt (300, 13px, 16px, #B1B1B1);
+    margin-bottom: 40px;
+}
+
+.registration-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: 29px;
+    width: 100%;
+    max-width: 167px;
+    min-height: 50px;
+    background-color: $clr-prjct-bsd;
+    @include txt (400, 14px, 17px, #FFFFFF);
+    text-transform: $text-transform;
+
+    &:hover {
+        background-color: darken($color: $clr-prjct-bsd, $amount: 20%);
+    }
+
+    &:active {
+        background-color: $clr-prjct-bsd;
+        color: #fff;
+    }
+
+    & svg {
+        display: block;
+        margin: 0 0 0 20px;
+        fill: #fff;
+    }
+}
+
+.registration-btn:hover>svg {
+    transform: translateX(10px);
+    transition: 500ms;
+}
+
+
+.registration-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-info-title {
+    display: block;
+    @include txt (300, 24px, 29px, #000000);
+    text-transform: $text-transform;
+    margin-bottom: 22px;
+}
+
+.registration-info-txt {
+    display: block;
+    @include txt (300, 24px, 29px, #000000);
+    margin-bottom: 21px;
+}
+
+.registration-info-item {
+    display: block;
+    @include txt (300, 24px, 29px, #000000);
+    margin-bottom: 16px;
+
+    & svg {
+        margin: 0 24px 0 0;
+        cursor: default;
+    }
+}
