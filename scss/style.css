@@ -2230,13 +2230,7 @@ a:hover.product-item-link {
 }
 
 .registration-btn:hover {
-  background-color: #fff;
-  color: #F16D7F;
-  border: 1px solid #F16D7F;
-}
-
-.registration-btn:hover ~ .registration-btn svg:hover {
-  fill: #F16D7F;
+  background-color: #e21632;
 }
 
 .registration-btn:active {
@@ -2248,6 +2242,13 @@ a:hover.product-item-link {
   display: block;
   margin: 0 0 0 20px;
   fill: #fff;
+}
+
+.registration-btn:hover > svg {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .registration-info {
@@ -2286,10 +2287,10 @@ a:hover.product-item-link {
   line-height: 29px;
   color: #000000;
   margin-bottom: 16px;
-  position: relative;
 }
 
 .registration-info-item svg {
   margin: 0 24px 0 0;
+  cursor: default;
 }
 /*# sourceMappingURL=style.css.map */

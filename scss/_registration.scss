@@ -74,13 +74,7 @@
     text-transform: $text-transform;
 
     &:hover {
-        background-color: #fff;
-        color: $clr-prjct-bsd;
-        border: 1px solid $clr-prjct-bsd;
-    }
-
-    &:hover~& svg:hover {
-        fill: $clr-prjct-bsd;
+        background-color: darken($color: $clr-prjct-bsd, $amount: 20%);
     }
 
     &:active {
@@ -94,6 +88,12 @@
         fill: #fff;
     }
 }
+
+.registration-btn:hover>svg {
+    transform: translateX(10px);
+    transition: 500ms;
+}
+
 
 .registration-info {
     display: flex;
@@ -117,10 +117,9 @@
     display: block;
     @include txt (300, 24px, 29px, #000000);
     margin-bottom: 16px;
-    position: relative;
 
     & svg {
         margin: 0 24px 0 0;
+        cursor: default;
     }
-
 }
