@@ -1742,7 +1742,7 @@ a:hover.product-item-link {
 }
 
 .order {
-  padding: 96px 0 128px 0;
+  margin: 96px 0 128px 0;
 }
 
 .order-wrp {
@@ -2090,5 +2090,206 @@ a:hover.product-item-link {
 .shipping-pay-module-btn:active {
   background-color: #F16D7F;
   color: #fff;
+}
+
+.registration {
+  margin: 64px 0 96px 0;
+}
+
+.registration-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 128px;
+}
+
+.registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+}
+
+.registration-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20.5px;
+}
+
+.registration-form input[type=text],
+.registration-form input[type=email],
+.registration-form input[type=password] {
+  width: 100%;
+  min-height: 44px;
+  max-width: 360px;
+  padding-left: 16px;
+  margin-bottom: 20.5px;
+  border: 1px solid #a4a4a4;
+}
+
+.registration-form input[type=text]::-webkit-input-placeholder,
+.registration-form input[type=email]::-webkit-input-placeholder,
+.registration-form input[type=password]::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration-form input[type=text]:-ms-input-placeholder,
+.registration-form input[type=email]:-ms-input-placeholder,
+.registration-form input[type=password]:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration-form input[type=text]::-ms-input-placeholder,
+.registration-form input[type=email]::-ms-input-placeholder,
+.registration-form input[type=password]::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration-form input[type=text]::placeholder,
+.registration-form input[type=email]::placeholder,
+.registration-form input[type=password]::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 34px 0;
+}
+
+.registration-radio input {
+  margin-right: 10px;
+  border: 1px solid #A4A4A4;
+  width: 17px;
+  height: 17px;
+}
+
+.registration-radio label {
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration-pswrd-txt {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-bottom: 40px;
+}
+
+.registration-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 29px;
+  width: 100%;
+  max-width: 167px;
+  min-height: 50px;
+  background-color: #F16D7F;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.registration-btn:hover {
+  background-color: #fff;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
+.registration-btn:hover ~ .registration-btn svg:hover {
+  fill: #F16D7F;
+}
+
+.registration-btn:active {
+  background-color: #F16D7F;
+  color: #fff;
+}
+
+.registration-btn svg {
+  display: block;
+  margin: 0 0 0 20px;
+  fill: #fff;
+}
+
+.registration-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-info-title {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.registration-info-txt {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.registration-info-item {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.registration-info-item svg {
+  margin: 0 24px 0 0;
 }
 /*# sourceMappingURL=style.css.map */
