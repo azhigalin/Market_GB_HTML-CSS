@@ -3,19 +3,16 @@
 
     &-wrp {
         display: flex;
-        justify-content: space-between;
+        gap: 128px;
     }
 }
 
 .order-add-wrp {
     width: 100%;
-    max-width: 652px;
 }
 
 .order-card {
     display: flex;
-    width: 100%;
-    max-width: 652px;
     min-height: 306px;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -33,7 +30,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 652px;
     gap: 6px;
     padding: 22px 0 62px 32px;
 
@@ -42,7 +38,7 @@
         text-transform: $text-transform;
         margin-bottom: 42px;
         width: 100%;
-        max-width: 216px;
+        max-width: 208px;
     }
 
     &-txt {

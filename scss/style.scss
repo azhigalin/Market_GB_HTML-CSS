@@ -125,6 +125,72 @@
         display: none;
     }
 
+    .product-item-media-two {
+        display: none;
+    }
+
+    .order {
+        margin: 59px 0 128px 0;
+    }
+
+    .order-wrp {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .order-add-wrp {
+        max-width: 734px;
+    }
+
+    .order-card {
+        max-width: 734px;
+    }
+
+    .order-btn-wrp {
+        justify-content: center;
+        gap: 48px;
+    }
+
+    .shipping {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 734px;
+        gap: 15px;
+        max-height: 214px;
+    }
+
+    .shipping-wrp {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .registration {
+        margin: 40px 0 96px 0;
+    }
+
+    .registration-wrp {
+        gap: 22px;
+    }
+
+    .registration-info {
+        max-width: 354px;
+    }
+
+    .registration-info-title {
+        @include txt (300, 16px, 19px, #000000);
+        margin-bottom: 32px;
+    }
+
+    .registration-info-txt {
+        @include txt (300, 16px, 19px, #000000);
+    }
+
+    .registration-info-item {
+        @include txt (300, 16px, 19px, #000000);
+        margin-bottom: 16px;
+
+    }
 }
 
 
@@ -273,5 +339,124 @@
 
     .list-btn-title {
         @include txt (400, 12px, 14px, #6F6E6E);
+    }
+
+    .product-item-media-three {
+        display: none;
+    }
+
+    .description-product-title {
+        margin-top: 64px;
+    }
+
+    .description-txt {
+        max-width: 326px;
+        @include txt (300, 14px, 20px, #5E5E5E);
+    }
+
+    .description-item-btn {
+        @include txt (400, 10px, 12px, #6F6E6E);
+    }
+
+    .order {
+        margin: 40px 0 96px 0;
+    }
+
+    .order-wrp {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .order-add-wrp {
+        max-width: 360px;
+    }
+
+    .order-card {
+        max-width: 360px;
+        min-height: 188px;
+
+        &:nth-child(2) {
+            margin-bottom: 28px;
+        }
+    }
+
+    .order-card img {
+        width: 142px;
+        height: 188px;
+    }
+
+    .order-btn-wrp {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .order-card-item {
+        gap: 4px;
+        padding: 13px 0 0 17px;
+
+        &-title {
+            @include txt (400, 16px, 19px, #222222);
+            margin-bottom: 26px;
+            width: 100%;
+            max-width: 138px;
+        }
+
+        &-txt {
+            @include txt (400, 14px, 17px, #575757);
+        }
+
+    }
+
+    .order-card-cls {
+        height: 11px;
+        padding: 16px 12px 0 0;
+
+        & svg {
+            width: 9px;
+            height: 11px;
+        }
+    }
+
+    #Quantity,
+    #Quant {
+        max-width: 24px;
+        height: 14px;
+        border: 1px solid #EAEAEA;
+        @include txt (400, 10px, 12px, #656565);
+    }
+
+    .order-btn {
+        min-height: 32px;
+        @include txt (400, 12px, 14px, #575757);
+    }
+
+    .registration {
+        margin: 40px 0 96px 0;
+    }
+
+    .registration-wrp {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .registration-info {
+        max-width: 354px;
+    }
+
+    .registration-info-title {
+        @include txt (300, 16px, 19px, #000000);
+        margin-bottom: 32px;
+    }
+
+    .registration-info-txt {
+        @include txt (300, 16px, 19px, #000000);
+    }
+
+    .registration-info-item {
+        @include txt (300, 16px, 19px, #000000);
+        margin-bottom: 16px;
+
     }
 }
