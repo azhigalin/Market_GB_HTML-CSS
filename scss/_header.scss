@@ -37,12 +37,12 @@
     &-input {
         width: 20px;
         min-height: 20px;
-        padding: 5px;
+        padding: 5px 5px 5px 10px;
         box-sizing: border-box;
         background-color: transparent;
         border: none;
         position: absolute;
-        top: -1px;
+        top: 3px;
         left: 30px;
         color: #fff;
         font-size: 16px;
@@ -54,21 +54,14 @@
         width: 150px;
         min-height: 20px;
         transition: width 1s ease;
-        border: 2px solid #fff;
+        border: 2px solid $clr-prjct-bsd;
+        border-radius: 15px;
     }
 
     &-label {
         display: block;
         width: 100%;
         height: 100%;
-    }
-
-    &-label:hover .search-icon-form__svg {
-        fill: gold;
-    }
-
-    &-label:active .search-icon-form__svg {
-        fill: green;
     }
 }
 
@@ -80,7 +73,7 @@
         display: block;
         width: 19px;
         height: 19px;
-        background-color: #F16D7F;
+        background-color: $clr-prjct-bsd;
         border-radius: 50%;
         display: flex;
         justify-content: center;

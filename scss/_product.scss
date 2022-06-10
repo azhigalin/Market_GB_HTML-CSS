@@ -10,30 +10,24 @@
     }
 
     &-tittle {
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 36px;
-        color: #222222;
+        @include txt (400, 30px, 36px, #222222);
     }
 
     &-text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #9F9F9F;
+        @include txt (400, 14px, 17px, #9F9F9F);
     }
 
     &-list {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        margin: 0 auto;
         gap: 30px;
         margin-bottom: 48px;
     }
 }
 
 .product-item {
-    margin: 0 auto;
     max-width: 360px;
     min-height: 581px;
     display: flex;
@@ -100,26 +94,17 @@
 
     &-title {
         margin: 0px 0px 12px 0;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 16px;
-        color: #000000;
-        text-transform: uppercase;
+        @include txt (bold, 13px, 16px, #000000);
+        text-transform: $text-transform;
     }
 
     &-txt {
-        margin: 0px 0px 18px 0;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: #5D5D5D;
+        margin: 0px 24px 18px 0;
+        @include txt (300, 14px, 17px, #5D5D5D);
     }
 
     &-price {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #F16D7F;
+        @include txt (400, 16px, 19px, $clr-prjct-bsd);
     }
 
     &-btn {
@@ -133,10 +118,7 @@
         border: 1px solid #FFFFFF;
         background: transparent;
         text-align: center;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
+        @include txt (400, 14px, 17px, #FFFFFF);
         position: absolute;
         top: 30%;
         left: calc(50% - 80px);
@@ -155,23 +137,20 @@ a:hover.product-item-link {
     min-height: 48px;
     margin: 0 auto;
     border: 1px solid #FF6A6A;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
+    @include txt (400, 16px, 19px, $clr-prjct-3);
     background-color: #FFFFFF;
     text-align: center;
     word-break: break-all;
 
 
     &:hover {
-        background-color: #F26376;
+        background-color: $clr-prjct-3;
         color: #fff;
     }
 
     &:active {
         background-color: #fff;
-        border: 2px solid #F26376;
-        color: #F26376;
+        border: 2px solid $clr-prjct-3;
+        color: $clr-prjct-3;
     }
 }

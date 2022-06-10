@@ -12,11 +12,8 @@
 }
 
 .breadcrumb-title {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-    text-transform: uppercase;
+    @include txt (400, 24px, 29px, $clr-prjct-bsd);
+    text-transform: $text-transform;
 }
 
 .breadcrumb-list {
@@ -35,10 +32,8 @@
 }
 
 .breadcrumb-item {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
+    @include txt (300, 14px, 17px, #222222);
+    text-transform: $text-transform;
 }
 
 .breadcrumb-item-link {
@@ -46,5 +41,5 @@
 }
 
 .breadcrumb-item span {
-    color: #F16D7F;
+    color: $clr-prjct-bsd;
 }
