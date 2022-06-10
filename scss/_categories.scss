@@ -8,24 +8,19 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 0 auto;
         gap: 30px;
     }
 }
 
 .categories-item {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    min-height: inherit;
     width: 100%;
-    max-width: 30%;
-    min-width: min-content;
+    max-width: 360px;
     min-height: 260px;
-    margin: 0 0 30px 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

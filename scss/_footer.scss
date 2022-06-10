@@ -4,7 +4,7 @@
     width: 100%;
     padding: 40px;
     min-height: 448px;
-    background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)),
+    background-image: linear-gradient(rgba(244, 244, 244, 0.2), rgba(244, 244, 244, 0.2)),
         url('../img/coast.png');
     background-size: cover;
     background-position: center;
@@ -15,8 +15,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
-        margin: 0 auto;
         gap: 60px;
         flex-wrap: wrap;
     }
@@ -27,7 +25,6 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
     max-width: 360px;
 
 
