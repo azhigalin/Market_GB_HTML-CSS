@@ -1,0 +1,156 @@
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 777px;
+    background: url(../img/woman-chair.png) no-repeat 514px;
+    background-color: #F7F7F7;
+    background-position: center;
+}
+
+.slide-btn {
+    width: 100%;
+    height: 47px;
+    max-width: 47px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+
+.description {
+    margin: 0 0 128px 0;
+}
+
+.description-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    margin-top: -62px;
+    min-height: 601px;
+    background-color: #FFFFFF;
+}
+
+.description-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 641px;
+}
+
+.description-product-title {
+    @include txt (300, 14px, 17px, $clr-prjct-bsd);
+    text-transform: $text-transform;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.description-product-title:before {
+    content: "";
+    display: block;
+    width: 63px;
+    height: 3px;
+    background-color: $clr-prjct-2;
+    position: absolute;
+    top: 29px;
+    left: 46px;
+}
+
+.description-title {
+    @include txt (300, 18px, 22px, #4D4D4D);
+    text-transform: $text-transform;
+    margin-bottom: 48px;
+}
+
+.description-txt {
+    max-width: 554px;
+    @include txt (300, 14px, 17px, #5E5E5E);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.product-description-price {
+    @include txt (300, 24px, 29px, $clr-prjct-2);
+    margin-bottom: 64px;
+}
+
+.description-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 64px 0 48px 0;
+    gap: 42px;
+}
+
+#description-btn {
+    display: none;
+}
+
+.description-item-btn {
+    display: block;
+    @include txt (400, 14px, 17px, #6F6E6E);
+    text-transform: $text-transform;
+    position: relative;
+
+    & svg {
+        fill: #6F6E6E;
+        position: absolute;
+        top: 40%;
+        margin-left: 9px
+    }
+
+    &:hover {
+        color: $clr-prjct-bsd;
+    }
+
+    &:hover svg {
+        fill: currentColor;
+    }
+
+    &:active {
+        color: black;
+    }
+
+    &:active svg {
+        fill: currentColor;
+    }
+}
+
+.description-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
+    max-width: 211px;
+    border: 1px solid #FF6A6A;
+    background: transparent;
+    text-align: center;
+    @include txt (400, 14px, 17px, $clr-prjct-3);
+
+    & svg {
+        fill: $clr-prjct-2;
+        margin-right: 22px;
+    }
+
+    &:hover {
+        color: $clr-prjct-bsd;
+    }
+
+    &:hover svg {
+        fill: currentColor;
+    }
+
+    &:active {
+        color: black;
+        border: 1px solid black;
+    }
+
+    &:active svg {
+        fill: currentColor;
+    }
+}

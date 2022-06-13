@@ -4,7 +4,7 @@
 
 
     &-wrap {
-        height: 764px;
+        min-height: 764px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -16,12 +16,8 @@
         width: 100%;
         max-width: 377px;
         margin: 0 95px 87px 0;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 58px;
-        color: #222222;
-        text-transform: uppercase;
+        @include txt (900, 48px, 58px, #222222);
+        text-transform: $text-transform;
         position: relative;
     }
 
@@ -30,7 +26,7 @@
         display: block;
         width: 12px;
         height: 92px;
-        background-color: #F16D7F;
+        background-color: $clr-prjct-bsd;
         position: absolute;
         top: 0;
         left: -28px;
@@ -38,12 +34,10 @@
 
     &-text {
         display: block;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 38.4px;
+        @include txt (700, 30px, 38.4px, #222222);
     }
 
     &-text span {
-        color: #F16D7F;
+        color: $clr-prjct-bsd;
     }
 }

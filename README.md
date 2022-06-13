@@ -1,2 +1,2 @@
 # project-shop
-Homework
+исправлено отображение файлов
